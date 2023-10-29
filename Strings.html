@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--This is for week 3 of CSC102 
+        we will make input validation form and a palindrome checker 
+        Cheyenne Pointer 
+        cpointer85344@uat.edu
+        23OCT2023-->
+    <script src="StringCode.js"></script>
+    <!--this is the code that connects to the js string code-->
+    <link rel="stylesheet" href="stringstyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this shows the specifics of the page-->
+    <title>CSC102</title>
+    <!--the title of the page-->
+</head>
+<!--the head is where the page information goes-->
+
+<body>
+    <!--the body is where everyhing-->
+    <header>
+        <h1> Welcome to my Strings.html page </h1>
+    </header>
+    <nav>
+        <h2>
+            Navigation
+        </h2>
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+        <a href="./game.html">Game</a><br>
+        <a href="./Strings.html">Strings</a><br>
+    </nav>
+    <!--this is the largest text size and thus will also be the text of my title-->
+    <h2>Input Validation Section</h2>
+    <!--second biggest text explaining that this page is about input validation-->
+    <p> Please Submit the following data for Validation</p>
+    <!--instructions on what to do on the pg and it has its own paragraph or section-->
+    <form id="creditSubmit" onsubmit="return false">
+        <!--forming identification to be able to be called on and what to do when called upon-->
+        First Name: <input type="text" id="fName"><br>
+        <!--first name is given an input type and an identifier to be able to referenced and br to seperate-->
+        Last Name : <input type="text" id="lname"><br>
+        <!-- last name is also given input and indenfier then new line-->
+        Zip Code : <input type="text" id="zipCode"><br>
+        <!--zipcode is also given an input or text box and identifier -->
+        <br>
+        <!--this indicates a  enter or new line -->
+        <input type=" submit" onclick="checkCreds();" </form>
+        <!--new button or input selection and what to do with it and how to dientify it lter -->
+        <br>
+        <!--enter-->
+        <br>
+        <!--enter-->
+        <h2> Palindrome checker</h2>
+        <!--name this section the palindome ect... and use the second largest font to bring eyes to it -->
+        <br>
+        <!--enter-->
+        <div id="palinStatus"> Palindrome Status</div>
+        <!--provides the div element a unique identifier names palinstatus to be used later, text will say palindrome status-->
+        <br>
+        <!--enter-->
+        <form id="palinSumbit" onsumbit=" return false">
+
+            Enter possible Palindrome: <input type="text" id="palinInput"><br>
+            <br>
+            <input type="submit" onclick="checkPalin()" ;>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            University of advancing Technology<br>
+            2625 W. Baseline Rd. <br>
+            Tempe, Az 85283-1056<br>
+            <br>
+            602-383-8228<br>
+            <br>
+        </footer>
+
+
+
+</body>
+
+</html>
