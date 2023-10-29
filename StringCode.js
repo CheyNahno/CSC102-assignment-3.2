@@ -1,7 +1,9 @@
 function checkcode() {
     //input valuidation for week 3 
     console.log("checkCreds() started");
+    //the console will check run for check creds when syarted 
     document.getElementById("loginStatus").innerHTML = "Status of Login";
+    //the element identified by status of login 
     var firstName;
     //names the variable first name 
     var lastName;
@@ -16,34 +18,50 @@ function checkcode() {
     //fill in variable 
     firstName = document.getElementById("fName").value;
     // the first name document will identify first name as an element idenifier to look out for 
-    console.log("The first name was inputed as" + fistName);
-
+    console.log("The first name was inputed as" + firstName);
+// the first name was inputed as is referenced as firstname 
     lastName = document.getElementById("lName").value;
+    //last name has an identifier lname
     console.log("The last name was inputed as" + lastName);
+    //will tell the console that the last nme was inputed as when LAST NAME will reference each other
 
     zipCode = document.getElementById("zipCode").value;
+    //the zipcode gets its own identifier for the computer 
     console.log("The zipCode was inputed as" + zipCode);
-
+//whenever that identifer is put in the computer knows the zip code is put in 
     fullName = firstName + lastName;
+    // the full name is composed of both first and last name 
     console.log("The Full name was inputed as" + fullName);
+    //the computer now knows when both first and last name are put in the fullname is inputed
 
     fullNameLength = fullName.legnth;
+    //the full name now has an idenfier added to it length 
     console.log("The Full name was inputed as" + fullNameLength + "characters.");
-
+// identifies the full name which is first and last name characters amount 
     zipCodeNumb = parseInt(zipcode);
+    // lookout for zipcode numers 
     console.log("The zipCode number is " + zipCodeNumb);
+    //console log will show that the zipcode number will have this many nymbers 
 
     //things to check for..fullNameLength is less than 20 characters,
     // zipCode has only 5 digits 
     if (fullNameLength > 20) {
+        //this is logic statements that put parameters on the fullname length that we made a variable for 
         document.getElementById("loginStatus").innerHTML = "Invalid full name";
+        //document will show invalid full name if ther is more than 20 
         console.log("Invalid full name");
+        //the computer will then give that response to the user 
     } else if (zipCode.legnth != 5) {
+        //the zipcode length that we gave an identifier for will now need to be 5 digits long 
         document.getElementById("loginStatus").innerHTML = "Invalid zipcode";
+        //the login status will show invalid zipcode if it is not 
         console.log("Invalid zipcode");
     } else {
+        //another logic statement 
         alert("User credientals passed, welcome to the site," + fullName);
+        //if all else is correct above  it will show welcome to the site 
         console.log("Credientals passed");
+        //the computer and user reads credientals passed 
     }
 }
 
